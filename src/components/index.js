@@ -1,7 +1,60 @@
 import React from "react";
+import DraggingComponent from "./DraggingComponent";
+import DroppingComponent from "./DroppingComponent";
+import DragDropSection from "./DragDropSection";
+import DragDropSectionCopy from "./DragDropSectionCopy";
+import Header from "./Header";
 
-function App() {
-  return <div className="App">Hello</div>;
+const originalDashboards = [
+  { id: "1", isActive: "false", name: "Text" },
+  { id: "1", isActive: "false", name: "Input Area" },
+  { id: "1", isActive: "false", name: "Select" },
+  { id: "1", isActive: "false", name: "Paragraph" },
+  { id: "1", isActive: "false", name: "Heading" },
+  { id: "1", isActive: "false", name: "Button" }
+];
+
+class App extends React.Component {
+  state = {
+    dashboardList: [],
+    selectedDashboards: []
+  };
+  componentDidMount() {
+    this.getDashboards();
+  }
+  getDashboards = () => {
+    const selectedDashboards = originalDashboards.filter(
+      dashboard => dashboard.isActive === true
+    );
+    this.setState({ selectedDashboards: selectedDashboards });
+  };
+  resetDashboards = () => {
+    this.setState({
+      dashboardList: originalDashboards.filter(
+        dashboard => dashboard.isActive === false
+      ),
+      selectedDashboards: originalDashboards.filter(
+        dashboard => dashboard.isActive === true
+      )
+    });
+  };
+  render() {
+    return (
+      <>
+        {/* <DraggingComponent />
+      <DroppingComponent /> */}
+        {/* <DragDropSection /> */}
+        <Header />
+        <DragDropSectionCopy
+          listItems={originalDashboards}
+          selectedList={this.state.selectedDashboards}
+        />
+        <div className="footer" onClick={this.resetDashboards}>
+          Reset
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
