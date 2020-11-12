@@ -163,7 +163,7 @@ div[role="tabpanel"] {
 .dropArea {
   box-sizing: border-box;
   height: 460px;
-  width: 659px;
+  width: 1100px;
   border: 1px dashed #979797;
   border-radius: 4px;
   background-color: #ffffff;
@@ -188,7 +188,7 @@ div[role="tabpanel"] {
 
 .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer button {

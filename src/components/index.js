@@ -1,8 +1,5 @@
 import React from "react";
-import DraggingComponent from "./DraggingComponent";
-import DroppingComponent from "./DroppingComponent";
 import DragDropSection from "./DragDropSection";
-import DragDropSectionCopy from "./DragDropSectionCopy";
 import Header from "./Header";
 
 const originalDashboards = [
@@ -45,12 +42,13 @@ class App extends React.Component {
       <DroppingComponent /> */}
         {/* <DragDropSection /> */}
         <Header />
-        <DragDropSectionCopy
+        <DragDropSection
           listItems={originalDashboards}
           selectedList={this.state.selectedDashboards}
         />
-        <div className="footer" onClick={this.resetDashboards}>
-          Reset
+        <div className="footer">
+          <button>Reset</button>
+          <button>Clear</button>
         </div>
       </>
     );
