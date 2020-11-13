@@ -4,11 +4,11 @@ import Header from "./Header";
 
 const originalDashboards = [
   { id: "1", isActive: "false", name: "Text" },
-  { id: "1", isActive: "false", name: "Input Area" },
-  { id: "1", isActive: "false", name: "Select" },
-  { id: "1", isActive: "false", name: "Paragraph" },
-  { id: "1", isActive: "false", name: "Heading" },
-  { id: "1", isActive: "false", name: "Button" }
+  { id: "2", isActive: "false", name: "Input Area" },
+  { id: "3", isActive: "false", name: "Select" },
+  { id: "4", isActive: "false", name: "Paragraph" },
+  { id: "5", isActive: "false", name: "Heading" },
+  { id: "6", isActive: "false", name: "Button" }
 ];
 
 class App extends React.Component {
