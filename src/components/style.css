@@ -1,122 +1,3 @@
-.main-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.customizePosition {
-  position: absolute;
-  left: 0;
-  top: 35%;
-}
-
-.customizePosition1 {
-  position: absolute;
-  right: 5px;
-  top: 35%;
-}
-.close-button {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.23px;
-  line-height: 21px;
-  cursor: pointer;
-}
-
-.ContentContainer {
-  width: 1000px;
-  background-color: #f7f8fb;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-  left: 30px;
-  top: 77px;
-  position: absolute;
-  z-index: 2;
-  padding-right: 40px;
-}
-/* width */
-.ContentContainer ::-webkit-scrollbar {
-  width: 11px;
-}
-
-/* Track */
-.ContentContainer ::-webkit-scrollbar-track {
-  border-radius: 4px;
-}
-
-/* Handle */
-.ContentContainer ::-webkit-scrollbar-thumb {
-  background: #d8d8d8;
-  border-radius: 4px;
-  height: 59px;
-}
-
-/* Handle on hover */
-.ContentContainer ::-webkit-scrollbar-thumb:hover {
-  background: #c9c2c2;
-}
-.ContentContainer .header1 {
-  display: flex;
-  align-items: center;
-  height: 39px;
-}
-
-.contentCustomization {
-  color: #042856;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -0.23px;
-  line-height: 21px;
-  padding-left: 17px;
-  padding-right: 70px;
-}
-
-.ContentContainer .MuiTabs-root {
-  background-color: white;
-  min-height: auto;
-  margin-top: 9px;
-  margin-left: 150px;
-}
-.MuiTabs-flexContainer {
-  height: 30px;
-}
-button.MuiButtonBase-root.MuiTab-root {
-  min-width: fit-content;
-  color: #000000;
-  font-family: Bogle;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.35px;
-  line-height: 22px;
-  text-transform: none;
-  min-height: auto;
-  margin-left: 4px;
-  border-radius: 4px;
-  margin: 1px 0;
-}
-
-.tabDescription {
-  color: #031f42;
-  font-family: Roboto;
-  font-size: 20px;
-  letter-spacing: -0.25px;
-  line-height: 28px;
-  padding-left: 45px;
-  padding-top: 32px;
-}
-.tabDescription span {
-  font-size: initial;
-}
-div[role="tabpanel"] {
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-}
-
 .dragndrop {
   display: flex;
   padding-top: 18px;
@@ -131,11 +12,6 @@ div[role="tabpanel"] {
   min-width: 250px;
   max-height: 480px;
   overflow-y: auto;
-}
-
-.draggableList1 {
-  display: flex;
-  flex-direction: column;
 }
 
 .draggableList .list-item,
@@ -212,7 +88,11 @@ div[role="tabpanel"] {
 }
 
 .footer .save {
-  background-color: #ffffff;
+  background-color: cornflowerblue;
+}
+
+.footer .clear {
+  background-color: cornflowerblue;
 }
 
 .header-main {
