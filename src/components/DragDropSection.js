@@ -171,6 +171,9 @@ export default class DragDropSection extends Component {
                       )}
                     </Draggable>
                   ))}
+                  {this.state.selected.length === 0 && (
+                    <p>Drag and drop in the sequence of your importance.</p>
+                  )}
                   {provided.placeholder}
                 </div>
               )}
